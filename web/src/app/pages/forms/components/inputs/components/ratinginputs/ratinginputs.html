@@ -1,21 +1,39 @@
-<div class="raiting-box">
-  <div class="col-md-4">
-    <ngb-rating [(ngModel)]="_rate1" max="{{_max1}}" class="rating">
-        <ng-template let-fill="fill">
-            <i *ngIf="fill === 100" class="ion-android-star"></i>
-            <i *ngIf="fill === 0" class="ion-android-star-outline"></i>
-        </ng-template>
-    </ngb-rating>
-    <span class="help-block">Rate: {{_rate1}}</span>
-  </div>
+<style>
+    .row {
+        margin-bottom: 30px
+    }
+</style>
 
-  <div class="col-md-8">
-    <ngb-rating [(ngModel)]="_rate2" max="{{_max2}}" class="rating">
-        <ng-template let-fill="fill">
-            <i *ngIf="fill === 100" class="ion-ios-heart"></i>
-            <i *ngIf="fill === 0" class="ion-ios-heart-outline"></i>
-        </ng-template>
-    </ngb-rating>
-    <span class="help-block">Rate: {{_rate2}}</span>
-  </div>
+<div class="raiting-box">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ngb-rating [(ngModel)]="_rate1" max="{{_max1}}" class="rating">
+                    <ng-template let-fill="fill">
+                        <i *ngIf="fill === 100" class="ion-android-star"></i>
+                        <i *ngIf="fill === 0" class="ion-android-star-outline"></i>
+                    </ng-template>
+                </ngb-rating>
+                <span class="help-block">Rate: {{_rate1}}</span>
+            </div>
+
+            <div class="col-md-8">
+                <ngb-rating [(ngModel)]="_rate2" max="{{_max2}}" class="rating">
+                    <ng-template let-fill="fill">
+                        <i *ngIf="fill === 100" class="ion-ios-heart"></i>
+                        <i *ngIf="fill === 0" class="ion-ios-heart-outline"></i>
+                    </ng-template>
+                </ngb-rating>
+                <span class="help-block">Rate: {{_rate2}}</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="range" id="myRange" value="{{_max3}}" [(ngModel)]="_rate3">
+                <span class="help-block">Rate: {{_rate3}}</span>
+            </div>
+        </div>
+    </div>
+
 </div>
