@@ -6,10 +6,12 @@ import { NgaModule } from '../../theme/nga.module';
 import { routing }       from './maps.routing';
 import { Maps } from './maps.component';
 import { BubbleMaps } from './components/bubbleMaps/bubbleMaps.component';
+import { HeatMaps } from './components/heatMaps/heatMaps.component';
 import { GoogleMaps } from './components/googleMaps/googleMaps.component';
 import { LeafletMaps } from './components/leafletMaps/leafletMaps.component';
 import { LineMaps } from './components/lineMaps/lineMaps.component';
 import { BubbleMapsService } from './components/bubbleMaps/bubbleMaps.service';
+import { HeatMapsService } from './components/heatMaps/heatMaps.service';
 import { LineMapsService } from './components/lineMaps/lineMaps.service';
 
 
@@ -23,12 +25,14 @@ import { LineMapsService } from './components/lineMaps/lineMaps.service';
   declarations: [
     Maps,
     BubbleMaps,
+    HeatMaps,
     GoogleMaps,
     LeafletMaps,
     LineMaps
   ],
   providers: [
     BubbleMapsService,
+    HeatMapsService,
     LineMapsService
   ]
 })

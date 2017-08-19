@@ -261,6 +261,14 @@ export const PAGES_MENU = [
                 title: 'general.menu.line_maps',
               }
             }
+          },
+          {
+            path: 'heatmaps',
+            data: {
+              menu: {
+                title: 'general.menu.heat_maps',
+              }
+            }
           }
         ]
       },
