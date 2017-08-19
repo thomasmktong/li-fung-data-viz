@@ -37,6 +37,28 @@ export const PAGES_MENU = [
         ]
       },
       {
+        path: 'lifungs',
+        data: {
+          menu: {
+            title: 'general.menu.lifungs',
+            icon: 'ion-edit',
+            selected: false,
+            expanded: false,
+            order: 100,
+          }
+        },
+        children: [
+          {
+            path: 'photosearch',
+            data: {
+              menu: {
+                title: 'general.menu.photosearch',
+              }
+            }
+          }
+        ]
+      },
+      {
         path: 'components',
         data: {
           menu: {
